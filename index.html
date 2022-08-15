@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ 
+  <div class="opacity">
+  </div>
+  <header>
+    <img src="images/logo.svg" alt="">
+    <a href="#" class="btn-abrir" onclick="abrirMenu()"><img src="images/icon-menu.svg" alt=""></a>
+  </header>
+  <section>
+    <img id="hero-mobile" src="images/image-hero-mobile.png" alt="">
+   <div class="background-desktop">
+    <img id="hero-desktop" src="images/image-hero-desktop.png" alt="">
+  </div>
+  
+  <div class="information">
+  
+  <div class="title">
+    <h1>Make&nbsp;<h1> remote work</h1></h1>
+    
+  </div>
+  <div class="subTitle">
+  <p> Get your team in sync, no matter your location. Streamline processes, 
+    create team rituals, and watch productivity soar.</p>
+  </div>
+  <button class="btn-learn">Learn more</button>
+</div>
+    
+  
+  </section>
+    
+    <footer>
+      <img src="images/client-databiz.svg" alt="">
+      <img src="images/client-audiophile.svg">
+      <img src="images/client-meet.svg" alt="">
+      <img src="images/client-maker.svg" alt="">
+    </footer>
+  
+
+    <nav id="menu">
+      <a href="#" id="close-menu" onclick="fecharMenu()" ><img src="images/icon-close-menu.svg"></a>
+      <ul id="List" >
+        <li id="freature-li">Features <input id="feature" onclick="abrirFeature()" type="image" src="images/icon-arrow-down.svg">  <input type="image" id="fecharFeature" onclick="fecharFeature()" src="images/icon-arrow-up.svg"></li>
+       
+        <ul id="listFeature">
+          <div class="ul-freature">
+          <li><img src="images/icon-todo.svg">Todo List</li>
+          <li><img src="images/icon-calendar.svg">Calendar</li>
+          <li><img src="images/icon-reminders.svg">Reminders</li>
+          <li><img src="images/icon-planning.svg">Planning</li>
+        </div>
+        </ul>
+       
+        <li id="company-li">Company <input id="abrirCompany" onclick="abrirCompany()" type="image" src="images/icon-arrow-down.svg"> <input type="image" id="fecharCompany" onclick="fecharCompany()" src="images/icon-arrow-up.svg"></li>
+        <div class="list-company" id="list-company">
+        <ul id="listCompany">
+          <li>History</li>
+
+          <li>Our Team</li>
+
+          <li>Blog</li>
+        </div>
+        </ul>
+    
+        
+
+        <ul class="carrer">
+        <li>Careers</li>
+        <li id="about">About</li>
+      </ul>
+      </div>
+      <div class="buttons">
+      <button id="login">Login</button>
+      <button id="register">Register</button>
+    </div>
+    </nav>
+
+ 
+
+    <script src="js/main.js"></script>
+    
+  
+
+
+
+  <!--
+  Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+</body>
+</html>
